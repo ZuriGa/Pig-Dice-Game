@@ -19,3 +19,6 @@ PigDiceGame.prototype.rollDice = function() {
     return this.dice;
 };
 
+PigDiceGame.prototype.hold = function() {
+    this.players[this.activePlayer].totalScore += this.players[this.activePlayer].currentScore;
+}
