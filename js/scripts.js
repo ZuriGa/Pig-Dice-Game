@@ -21,4 +21,9 @@ PigDiceGame.prototype.rollDice = function() {
 
 PigDiceGame.prototype.hold = function() {
     this.players[this.activePlayer].totalScore += this.players[this.activePlayer].currentScore;
+
+    this.players[this.activePlayer].currentScore = 0;
+    this.switchPlayer();
+    return this.activePlayer;
+
 }
