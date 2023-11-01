@@ -9,4 +9,13 @@ function PigDiceGame() {
 
 PigDiceGame.prototype.rollDice = function() {
     this.dice = Math.floor(Math.random() * 6) + 1;
-}
+
+    if (this.dice === 1) {
+        this.players[this.activePlayer].currentScore = 0;
+        this.switchPlayer();
+    } else {
+        this.players[this.activePlayer].currentScore += this.dice;
+    }
+    return this.dice;
+};
+
