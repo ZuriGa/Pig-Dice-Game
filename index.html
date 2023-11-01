@@ -1,17 +1,66 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+
+    <title>Pig Dice Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pig Dice Game</h1>
+        <div class="row">
+            <div class="column" style="background-color: blanchedalmond;">
+                <h2><span id="player1">Player 1</span></h2>
+            </div>
+            <div class="column" style="background-color: rgb(245, 208, 152);">
+                <h3>Player 2</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html> -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/scripts.js"></script>
-    <title>Pig Dice Game</title>
+    <title>PigDice Game:</title>
 </head>
 <body>
-    <h1>Pig Dice Game</h1>
+    <main>
+        <section class="player1">
+            <h2 class="name" id="player1">Player 1</h2>
+            <p class="score" id="score0">53</p>
+            <div class="current">
+                <p class="current-label">Current</p>
+                <p class="current-score" id="current0">0</p>
+            </div>
+        </section>
+        <section class="player2">
+            <h2 class="name" id="player2">Player 2</h2>
+            <p class="score" id="score1">34</p>
+            <div class="current">
+                <p class="current-label">Current</p>
+                <p class="current-score" id="current1">0</p>
+            </div>
+        </section>
 
-    <h2>Player 1</h2>
-    
-    <h3>Player 2</h3>
+        <button class="buttonNew">New Game</button>
+        <button class="buttonRoll">Roll dice</button>
+        <button class="buttonHold">Hold</button>
+    </main>
     
 </body>
 </html>
