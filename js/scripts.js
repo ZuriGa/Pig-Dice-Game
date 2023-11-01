@@ -22,6 +22,10 @@ PigDiceGame.prototype.rollDice = function() {
 PigDiceGame.prototype.hold = function() {
     this.players[this.activePlayer].totalScore += this.players[this.activePlayer].currentScore;
 
+    if (this.players[this.activePlayer].totalScore >= 100){
+        return "winner";
+    }
+
     this.players[this.activePlayer].currentScore = 0;
     this.switchPlayer();
     return this.activePlayer;
