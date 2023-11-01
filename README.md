@@ -13,9 +13,9 @@ Test: “it should reset score to zero if 1 comes up and switch to the new playe
 Code: activePlayer() switchPlayer()
 Output:
 
-Test: “It should reset the game if active player scores more than 100”
-Code: activePlayer >= 100
-Output:
+Test: “It should determine the "winner" if active player scores 100 or more”
+Code: totalScore >= 100
+Output: "Player 1 wins"
 
 Test: “It should store score for players after each dice roll”
 Code: rollDice() currentScore()

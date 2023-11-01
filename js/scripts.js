@@ -30,4 +30,18 @@ PigDiceGame.prototype.hold = function() {
     this.switchPlayer();
     return this.activePlayer;
 
+};
+
+PigDiceGame.prototype.switchPlayer = function () {
+
+    this.activePlayer = 1 - this.activePlayer;
+};
+
+PigDiceGame.prototype.getCurrentPlayer = function () {
+    return this.activePlayer;
 }
+
+PigDiceGame.prototype.getCurrentDice = function () {
+    return this.dice;
+};
+
