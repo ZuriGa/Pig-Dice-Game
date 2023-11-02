@@ -15,6 +15,7 @@
 <body>
     <div class="container">
         <h1>Pig Dice Game</h1>
+        <br />
         <div class="row">
             <div class="column" style="background-color: blanchedalmond;">
                 <h2><span id="player1">Player 1</span></h2>
@@ -23,19 +24,21 @@
                 
             </div>
             <div class="column" style="background-color: rgb(239, 175, 79);">
-                <h3><span id="player2">Player 2</span></h3>
+                <h2><span id="player2">Player 2</span></h2>
                 <p>Total Score: <span id="total-score-2">0</span></p>
                 <p>Current Score: <span id="current-score-2">0</span></p>
             </div>
-            <div class="column">
-            <p id="message"></p>
+            <div class="row2">
+                <p id="message"></p>
+                </div>
             </div>
         </div>
     </div>
-
-    <button id="buttonNew">New Game</button>
-    <button id="buttonRoll">Roll dice</button>
-    <button id="buttonHold">Hold</button>
+    <div class="center">
+        <button id="buttonNew" class="new">New Game</button>
+        <button id="buttonRoll" class="roll">Roll dice</button>
+    <button id="buttonHold" class="hold">Hold</button>
+    </div>
 
 
 </body>

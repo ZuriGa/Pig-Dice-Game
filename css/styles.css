@@ -1,11 +1,70 @@
+body{
+    background-image: radial-gradient(orange, #f4cd84, white);
+}
+.container {
+    text-align: center;
+}
+
 .column {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     float: left;
     width: 50%;
     padding: 10px;
+    border-radius: 15px;
 }
 
 .row:after {
     content: "";
     display: table;
     clear:both;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.row2{
+    background-color: #f4cd84;
+    border-radius: 15px;
+    height: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new {
+    background-image: linear-gradient(rgb(245, 162, 7), rgb(245, 196, 106), rgb(254, 230, 185) );
+    border-radius: 8px;
+    display: block;
+}
+.new:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.roll {
+    background-image: linear-gradient(rgb(247, 175, 42), rgb(248, 211, 142), rgb(248, 221, 171) );
+    border-radius: 8px;
+    display: block;
+}
+.roll:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.hold {
+    background-image: linear-gradient(rgb(250, 180, 51), rgb(250, 219, 161), rgb(254, 230, 185) );
+    border-radius: 8px;
+    display: block;
+}
+.hold:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
 }
