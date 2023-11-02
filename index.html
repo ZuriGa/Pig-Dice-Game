@@ -1,9 +1,11 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/scripts.js"></script>
 
@@ -16,51 +18,26 @@
         <div class="row">
             <div class="column" style="background-color: blanchedalmond;">
                 <h2><span id="player1">Player 1</span></h2>
+                <p>Total Score: <span id="total-score-1">0</span></p>
+                <p>Current Score: <span id="current-score-1">0</span></p>
+                
             </div>
-            <div class="column" style="background-color: rgb(245, 208, 152);">
-                <h3>Player 2</h3>
+            <div class="column" style="background-color: rgb(239, 175, 79);">
+                <h3><span id="player2">Player 2</span></h3>
+                <p>Total Score: <span id="total-score-2">0</span></p>
+                <p>Current Score: <span id="current-score-2">0</span></p>
+            </div>
+            <div class="column">
+            <p id="message"></p>
             </div>
         </div>
     </div>
 
-
+    <button id="buttonNew">New Game</button>
+    <button id="buttonRoll">Roll dice</button>
+    <button id="buttonHold">Hold</button>
 
 
 </body>
 
-</html> -->
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PigDice Game:</title>
-</head>
-<body>
-    <main>
-        <section class="player1">
-            <h2 class="name" id="player1">Player 1</h2>
-            <p class="score" id="score0">53</p>
-            <div class="current">
-                <p class="current-label">Current</p>
-                <p class="current-score" id="current0">0</p>
-            </div>
-        </section>
-        <section class="player2">
-            <h2 class="name" id="player2">Player 2</h2>
-            <p class="score" id="score1">34</p>
-            <div class="current">
-                <p class="current-label">Current</p>
-                <p class="current-score" id="current1">0</p>
-            </div>
-        </section>
-
-        <button class="buttonNew">New Game</button>
-        <button class="buttonRoll">Roll dice</button>
-        <button class="buttonHold">Hold</button>
-    </main>
-    
-</body>
 </html>
